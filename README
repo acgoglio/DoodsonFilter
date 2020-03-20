@@ -1,0 +1,27 @@
+#
+# doodson_filter program 
+#
+# Description: Script for detiding SSH hourly time-series by means of Doodson filter
+#              
+#
+# Input: SSH hourly time-series stored in daily files
+# Output: Hourly filtered values stored in daily files
+# 
+# Initialization file (required): filter.ini 
+#
+# Author: Anna Chiara Goglio (CMCC Bologna) 
+# email: annachiara.goglio@cmcc.it
+# Last change: Mar 2020
+#
+# WARNING: Climate Data Operators (CDO) required!
+#
+# How to run the filter:
+#  1) Set variable values in the initialization file (filter.ini) 
+#     Read CAREFULLY the WARNINGS in the file before running the script...
+#
+#  2) Try to run the shell script on few days (doodson_filter.sh)
+#
+#  3) Modify the preamble (from line 3 to line 8 depending on your system) and submit the job (doodson_filter.job)
+#
+# Good luck
+#        
