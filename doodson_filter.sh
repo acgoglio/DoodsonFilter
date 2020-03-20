@@ -68,16 +68,16 @@ set -e
         FOUND_NUM=0
         # If working on a native grid 
         if [[ $GRID_TO_EXTRACT != "uv2t" ]]; then
-           #if [[ -e ${ANA_INPATH}/$ANA_INFILE ]]; then
-           #   FOUND_NUM=$(( $FOUND_NUM + 1 ))
-           #   echo "Found infile: $ANA_INFILE"
-           #   ln -sf ${ANA_INPATH}/$ANA_INFILE .
-           #
-           # If file are stored in YYYYMM sub directories use the following lines instead of the previous ones: 
-           if [[ -e ${ANA_INPATH}/${IDX_DATE:0:6}/$ANA_INFILE ]]; then
+           if [[ -e ${ANA_INPATH}/$ANA_INFILE ]]; then
               FOUND_NUM=$(( $FOUND_NUM + 1 ))
               echo "Found infile: $ANA_INFILE"
-              ln -sf ${ANA_INPATH}/${IDX_DATE:0:6}/$ANA_INFILE .
+              ln -sf ${ANA_INPATH}/$ANA_INFILE .
+           
+           # If file are stored in YYYYMM sub directories use the following lines instead of the previous ones: 
+           #if [[ -e ${ANA_INPATH}/${IDX_DATE:0:6}/$ANA_INFILE ]]; then
+              #FOUND_NUM=$(( $FOUND_NUM + 1 ))
+              #echo "Found infile: $ANA_INFILE"
+              #ln -sf ${ANA_INPATH}/${IDX_DATE:0:6}/$ANA_INFILE .
            else
               echo "WARNING: FILE $ANA_INFILE NOT FOUND!! Check path and name template in inifile.."
            fi
