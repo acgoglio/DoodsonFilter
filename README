@@ -24,4 +24,7 @@
 #  3) Modify the preamble (from line 3 to line 8 depending on your system) and submit the job (doodson_filter.job)
 #
 # Good luck
+#
+# WARNING: The additional file doodson_filter_moi.py is a python version of the filter delivered by Mercator 
+#
 #        
